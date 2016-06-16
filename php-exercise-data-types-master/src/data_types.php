@@ -62,11 +62,11 @@ if (is_null($input)){
     echo $input;
 }
 }
-convert_to_int($input);
-convert_to_float($input);
-convert_to_string($input);
-convert_to_bool($input);  
+//convert_to_int($input);
+//convert_to_float($input);
+//convert_to_string($input);
+//convert_to_bool($input);  
 convert_to_array($input);
-convert_to_null($input);
+//convert_to_null($input);
 
 ?>

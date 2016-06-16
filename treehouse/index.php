@@ -1,6 +1,6 @@
 <?php 
-include("incs/data.php");
 include("incs/funcs.php");
+
 $pageTitle = "Personal Media Library";
 $section = null;
 
@@ -14,10 +14,10 @@ include("incs/header.php"); ?>
 
 				<ul class="items">
                     <?php 
-                    $random = array_rand($catalog,4);
+                    $random = random_catalog_array();
                     
-					foreach($random as $id){
-                    echo get_item_html($id, $catalog[$id]);        
+					foreach($random as $item){
+                    echo get_item_html($item);        
                     } ?>					
 				</ul>
 
